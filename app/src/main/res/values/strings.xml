@@ -7,4 +7,9 @@
     <string name="rules">Rules</string>
     <string name="lizard">lizard</string>
     <string name="here_the_computer_chose">here the computer chose</string>
+    <string name="play">Play</string>
+    <string name="rulesbuttontext">rules</string>
+    <string name="winText">You WIN!!</string>
+    <string name="loseText">You LOSE!!</string>
+    <string name="drawText">DRAW!!!!</string>
 </resources>
