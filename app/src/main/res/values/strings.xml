@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">rock_paper_scissors_lizard_spok</string>
+    <string name="rock">Rock</string>
+    <string name="paper">Paper</string>
+    <string name="spok">Spok</string>
+    <string name="scissors">Scissors</string>
+    <string name="rules">Rules</string>
+    <string name="lizard">lizard</string>
+    <string name="here_the_computer_chose">here the computer chose</string>
+</resources>
