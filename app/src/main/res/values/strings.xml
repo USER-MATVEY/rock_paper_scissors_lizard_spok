@@ -12,4 +12,5 @@
     <string name="winText">You WIN!!</string>
     <string name="loseText">You LOSE!!</string>
     <string name="drawText">DRAW!!!!</string>
+    <string name="startText">Press \'start\' play.</string>
 </resources>

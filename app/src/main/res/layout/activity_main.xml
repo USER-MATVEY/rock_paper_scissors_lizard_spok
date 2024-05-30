@@ -36,7 +36,7 @@
         android:id="@+id/ResultText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="texttexttexttext"
+        android:text="@string/startText"
         android:textSize="40sp"
         app:layout_constraintTop_toBottomOf="@+id/ComputerChoose"
         app:layout_constraintStart_toStartOf="parent"

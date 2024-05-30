@@ -1,6 +1,5 @@
 package com.dobriyanovmp.rock_paper_scissors_lizard_spok
 
-import android.app.Dialog
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -36,6 +35,9 @@ class MainActivity : AppCompatActivity() {
         binding.LizardButton.setOnClickListener { buttonClicker(binding.LizardButton.id) }
         binding.SpokButton.setOnClickListener { buttonClicker(binding.SpokButton.id) }
         binding.RulesButton.setOnClickListener { showRules() }
+        binding.RoundButton.setOnClickListener { newRound() }
+
+        roundOver()
     }
 
     private fun buttonClicker(buttonId: Int) {
@@ -55,6 +57,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getGameResults() {
+        roundOver()
         val computerChose: Int = kotlin.random.Random.nextInt(1, 6)
         val gameConditions: Pair<Int, Int> = (playersChose to computerChose)
         showComputerChose(computerChose)
@@ -107,4 +110,22 @@ class MainActivity : AppCompatActivity() {
             .create()
         dialog.show()
     }
+
+    private fun newRound() {
+        binding.RockButton.isEnabled = true
+        binding.PaperButton.isEnabled = true
+        binding.ScissorsButton.isEnabled = true
+        binding.LizardButton.isEnabled = true
+        binding.SpokButton.isEnabled = true
+        binding.RoundButton.isEnabled = false
+    }
+    private fun roundOver() {
+        binding.RockButton.isEnabled = false
+        binding.PaperButton.isEnabled = false
+        binding.ScissorsButton.isEnabled = false
+        binding.LizardButton.isEnabled = false
+        binding.SpokButton.isEnabled = false
+        binding.RoundButton.isEnabled = true
+    }
+
 }
